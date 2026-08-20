@@ -1,0 +1,21 @@
+[package]
+name = "sp-client"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "sp-client"
+path = "src/main.rs"
+
+[dependencies]
+sp-common = { path = "../sp-common" }
+sp-transport = { path = "../sp-transport" }
+sp-multipath = { path = "../sp-multipath" }
+tokio = { workspace = true }
+quinn = { workspace = true }
+rustls = { workspace = true }
+anyhow = { workspace = true }
+bytes = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+clap = { workspace = true }

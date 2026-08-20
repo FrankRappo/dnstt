@@ -1,0 +1,34 @@
+[workspace]
+resolver = "2"
+members = [
+    "crates/sp-common",
+    "crates/sp-transport",
+    "crates/sp-multipath",
+    "crates/sp-client",
+    "crates/sp-server",
+]
+
+[workspace.dependencies]
+tokio = { version = "1", features = ["full"] }
+quinn = "0.11"
+rustls = { version = "0.23", default-features = false, features = ["ring", "std"] }
+rcgen = "0.13"
+serde = { version = "1", features = ["derive"] }
+toml = "0.8"
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+anyhow = "1"
+bytes = "1"
+lz4_flex = "0.11"
+data-encoding = "2"
+rand = "0.8"
+clap = { version = "4", features = ["derive"] }
+hickory-proto = "0.25"
+reqwest = { version = "0.12", default-features = false, features = ["rustls-tls"] }
+dashmap = "6"
+parking_lot = "0.12"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

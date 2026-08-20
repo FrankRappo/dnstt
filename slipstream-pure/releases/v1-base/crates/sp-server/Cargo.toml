@@ -1,0 +1,21 @@
+[package]
+name = "sp-server"
+version = "0.1.0"
+edition = "2021"
+
+[[bin]]
+name = "sp-server"
+path = "src/main.rs"
+
+[dependencies]
+sp-common = { path = "../sp-common" }
+sp-transport = { path = "../sp-transport" }
+tokio = { workspace = true }
+quinn = { workspace = true }
+rustls = { workspace = true }
+anyhow = { workspace = true }
+bytes = { workspace = true }
+tracing = { workspace = true }
+tracing-subscriber = { workspace = true }
+clap = { workspace = true }
+hickory-proto = { workspace = true }

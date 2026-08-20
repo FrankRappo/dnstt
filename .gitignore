@@ -1,0 +1,36 @@
+# Credentials and runtime identity
+.env
+.env.*
+*token*
+*credential*
+!credentials.example.md
+*password*
+**/key.pem
+**/cert.pem
+**/reset.seed
+*.key
+
+# Rust/C build output and local history
+**/target/
+**/.git/
+**/.picoquic-build/
+**/.interop/
+**/.worktrees/
+**/__pycache__/
+
+# Archives and binaries
+**/archives/*
+!slipstream-pure/archives/
+!slipstream-pure/archives/README.md
+**/binaries/*
+!binaries/
+!binaries/README.md
+*.tar
+*.tar.gz
+*.tgz
+*.zip
+*.7z
+*.rar
+
+# Private maintenance exports
+**/server-*-runtime-archive-*/

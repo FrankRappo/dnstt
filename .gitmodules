@@ -1,0 +1,3 @@
+[submodule "slipstream-rust-plus"]
+	path = slipstream-rust-plus
+	url = https://github.com/Fox-Fig/slipstream-rust-plus.git

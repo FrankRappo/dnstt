@@ -1,0 +1,115 @@
+# Slipstream Pure — DNS Resolver Configuration
+# Добавить новый резолвер: скопировать блок [[resolver]] и заполнить поля
+# ip — обязательно, doh/ech — опционально
+
+# === Cloudflare ===
+[[resolver]]
+name = "Cloudflare"
+ip = ["1.1.1.1", "1.0.0.1"]
+doh = "https://cloudflare-dns.com/dns-query"
+ech = true
+
+# === Google ===
+[[resolver]]
+name = "Google"
+ip = ["8.8.8.8", "8.8.4.4"]
+doh = "https://dns.google/dns-query"
+ech = false
+
+# === Quad9 ===
+[[resolver]]
+name = "Quad9"
+ip = ["9.9.9.9", "149.112.112.112"]
+doh = "https://dns.quad9.net/dns-query"
+ech = true
+
+# === OpenDNS ===
+[[resolver]]
+name = "OpenDNS"
+ip = ["208.67.222.222", "208.67.220.220"]
+doh = "https://doh.opendns.com/dns-query"
+ech = false
+
+# === AdGuard ===
+[[resolver]]
+name = "AdGuard"
+ip = ["94.140.14.14", "94.140.15.15"]
+doh = "https://dns.adguard-dns.com/dns-query"
+ech = true
+
+# === CleanBrowsing ===
+[[resolver]]
+name = "CleanBrowsing"
+ip = ["185.228.168.9", "185.228.169.9"]
+doh = "https://doh.cleanbrowsing.org/doh/family-filter"
+ech = false
+
+# === NextDNS ===
+[[resolver]]
+name = "NextDNS"
+ip = ["45.90.28.0", "45.90.30.0"]
+doh = "https://dns.nextdns.io/"
+ech = true
+
+# === Mullvad ===
+[[resolver]]
+name = "Mullvad"
+ip = ["194.242.2.2"]
+doh = "https://dns.mullvad.net/dns-query"
+ech = true
+
+# === DNS.SB ===
+[[resolver]]
+name = "DNS.SB"
+ip = ["185.222.222.222", "45.11.45.11"]
+doh = "https://doh.dns.sb/dns-query"
+ech = true
+
+# === AliDNS ===
+[[resolver]]
+name = "AliDNS"
+ip = ["223.5.5.5", "223.6.6.6"]
+doh = "https://dns.alidns.com/dns-query"
+ech = false
+
+# === DNSPod (Tencent) ===
+[[resolver]]
+name = "DNSPod"
+ip = ["119.29.29.29"]
+doh = "https://doh.pub/dns-query"
+ech = false
+
+# === Comodo Secure ===
+[[resolver]]
+name = "Comodo"
+ip = ["8.26.56.26", "8.20.247.20"]
+
+# === Neustar/Vercara ===
+[[resolver]]
+name = "Neustar"
+ip = ["64.6.64.6", "64.6.65.6"]
+
+# === Level3/CenturyLink ===
+[[resolver]]
+name = "Level3"
+ip = ["4.2.2.1", "4.2.2.2"]
+
+# === Yandex ===
+[[resolver]]
+name = "Yandex"
+ip = ["77.88.8.8", "77.88.8.1"]
+
+# === Freenom ===
+[[resolver]]
+name = "Freenom"
+ip = ["80.80.80.80", "80.80.81.81"]
+
+# === UncensoredDNS ===
+[[resolver]]
+name = "UncensoredDNS"
+ip = ["91.239.100.100"]
+
+# === Hurricane Electric ===
+[[resolver]]
+name = "HurricaneElectric"
+ip = ["74.82.42.42"]

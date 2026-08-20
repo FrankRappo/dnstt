@@ -1,0 +1,15 @@
+[package]
+name = "sp-multipath"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+sp-common = { path = "../sp-common" }
+sp-transport = { path = "../sp-transport" }
+tokio = { workspace = true }
+anyhow = { workspace = true }
+bytes = { workspace = true }
+tracing = { workspace = true }
+dashmap = { workspace = true }
+parking_lot = { workspace = true }
+rand = { workspace = true }
