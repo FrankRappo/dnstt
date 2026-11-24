@@ -6,6 +6,16 @@
 > metadata, build caches, historical tar archives, and opaque binaries are not
 > included. All operational addresses use RFC 5737 examples.
 
+
+## Documentation map
+
+| Document | Content |
+|---|---|
+| [docs/server-runtime.md](docs/server-runtime.md) | v3.0 server layout, systemd unit, verification, certificate rotation, backup policy, capacity |
+| [docs/wsl-transparent-tunnel.md](docs/wsl-transparent-tunnel.md) | routing all WSL traffic through the tunnel (redsocks + unbound), solved pitfalls, measured throughput |
+| [docs/dns53-path-diagnostics.md](docs/dns53-path-diagnostics.md) | how to prove that port-53 packets really reach the server, and how to detect transparent DNS interception |
+| [docs/dns-tunnel-setup.md](docs/dns-tunnel-setup.md) | original v1 setup notes |
+
 ## Current protocol
 
 The newest in-repo protocol implementation is
